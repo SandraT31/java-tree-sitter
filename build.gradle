@@ -20,7 +20,7 @@ task buildSharedObject {
     doLast {
         exec {
             environment "JAVA_HOME", "/usr/lib/jvm/java-11-openjdk-amd64"
-            commandLine "./build.py", "tree-sitter-modules/tree-sitter-java"
+            commandLine "./build.py", "tree-sitter-modules/tree-sitter-java", "tree-sitter-modules/tree-sitter-python"
         }
     }
 }

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class NodeTest extends TestBase {
 
   @Test
-  void testGetChildren() throws UnsupportedEncodingException {
+  void testGetChildrenJava() throws UnsupportedEncodingException {
     try (Parser parser = new Parser()) {
       parser.setLanguage(Languages.java());
       try (Tree tree = parser.parseString("public class Thing { public static void main() { System.out.println('a'); } }")) {
